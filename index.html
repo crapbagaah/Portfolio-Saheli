@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Saheli Sahoo</title>
+    <link rel="shortcut icon" href="favicon-32x32.png">
+    <link rel="stylesheet" href="portfolio.css">
+    <script src="https://kit.fontawesome.com/2da03c4b01.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-----music------->
+    <div class="music">
+        <img src="all pics/play_icon.png" alt="play" id="icon">
+    </div>
+        
+    <audio id="song">
+        <source src="Winter-Night.mp3" type="audio/mp3">
+    </audio>
+    
+    <!--Header/Home-->
+    <div id="header">
+        <div class="container">
+            <nav>
+                
+                <img src="https://t3.ftcdn.net/jpg/03/81/30/16/360_F_381301638_mo8XtnvD4VtKWjNITYhwL3ITRxF4ldaO.jpg" alt="logo" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    
+                    <i class="fa-sharp fa-regular fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            
+            <div class="text">
+                <p>Hi, my name is</p>
+                <h1><span>Saheli</span> Sahoo</h1>
+                <h5>Front-end developer</h5>
+            </div>
+        </div>
+    </div>
+   
+    <!--About-->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="all pics/aboutme.jpg" width="300px" height="450px" style="border-radius: 15px ;">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p class="abme">I am a student studying Computer Science with specialization in Information Security at Vellore Institute of Technology, Vellore, India. I'm methodical, diligent and I give my 100% to what I pursue at the moment. An intent listener.
+                        <br> I'm currently working on a project cubesat.
+                    </p>
+                    
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('expr')">Experience</p>
+                        <p class="tab-links" onclick="opentab('edu')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="expr">
+                        <ul>
+                            <li><span>2023- Present</span><br>Technical Head<br>VIT Amateur Radio Club</li>
+                            <li><span>2023- Present</span><br>Office Bearer<br>IETE-ISF</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="edu">
+                        <ul>
+                            <li><span>2021-2025</span> B.Tech<br>CSE-IS at VIT</li>
+                            <li><span>2019-2021</span> 12th<br>Sushila Birla Girls' School</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!------Services--------->
+    <div id="services">
+        <div class="container">
+            <h1>Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h3 style="width: bold;">Web Developement</h3>
+                    <p>Currently I know frontend development of the web development, I like implementing visual components into web applications that users can view and interact with. </p>
+                    <a href="https://developer.mozilla.org/en-US/docs/Learn">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h3 style="width: bold;">Languages</h3>
+                    <p>Languages I am familiar with are Java, C, C++, Python, JavaScript.</p>
+                    <a href="https://www.w3schools.com/java/default.asp">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!------Work--------->
+    <div id="portfolio">
+        <div class="container">
+            <h1>My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="all pics/cubesat.jpg" alt="cubesat">
+                    <div class="layer">
+                        <h3>Cube Satellite Dashboard</h3>
+                        <p>Frontend dashboard for satellite tracking, telemetry monitoring</p>
+                        <a href="https://github.com/crapbagaah/cubesat_varc"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="all pics/port_pic.jpg" alt="portfolio">
+                    <div class="layer">
+                        <h3>My Portfolio</h3>
+                        <p>A curated set of educational and work-related materials that highlight my values, expertise, education, and experiences.</p>
+                        <a href="https://sahelisahoo.netlify.app/"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="all pics/proj_pic.jpg" alt="project">
+                    <div class="layer">
+                        <h3>E-commerce</h3>
+                        <p>An e-commerce website using HTML,CSS, JavaScript</p>
+                        <a href="https://github.com/crapbagaah/ecomm-acm"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+        
+    </div>
+
+    <!-------contact form------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1>Contact Me</h1>
+                    <div class="social-icons">
+                        <a href="mailto: iamsaheli09@gmail.com"><i class="fa-sharp fa-regular fa-envelope"></i></a>
+                        <a href="https://www.linkedin.com/in/saheli-sahoo-8772b2220/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/crapbagaah"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.instagram.com/crapbagaah/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://twitter.com/crapbagaah"><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                    <a href="saheli_resume_latest.pdf" class="btn btn2">CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="10" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+
+        </div>
+        
+    </div>
+    <div class="copyright">
+        <p><i class="fa-regular fa-copyright"></i> Developed by Saheli <i class="fa-solid fa-heart"></i> </p>
+    </div>
+<script src="portfolio.js"></script>
+
+</body>
+</html>
