@@ -46,11 +46,11 @@ var icon= document.getElementById("icon");
 icon.onclick=function(){
     if(song.paused){
         song.play();
-        icon.src="pause_icon.png"; 
+        icon.src="pause_icon.jpg";
     }
     else{
         song.pause();
-        icon.src ="play_icon.png";
+        icon.src="play_icon - Copy.jpg";
     }
 
 }
