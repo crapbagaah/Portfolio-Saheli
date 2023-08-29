@@ -1,3 +1,3 @@
-# Portfolio-Saheli.github.io
-My name is Saheli Sahoo, and this is my portfolio representing all that I've created.
+# Portfolio-Saheli
+My name is Saheli Sahoo, and this portfolio represents all I've created.
 Also to bless your ears, don't forget to turn on the music
